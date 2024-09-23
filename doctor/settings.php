@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
-        
-
-
     <title>Settings</title>
     <style>
         .dashbord-tables{
