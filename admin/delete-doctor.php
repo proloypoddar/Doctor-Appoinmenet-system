@@ -10,8 +10,7 @@
     }else{
         header("location: ../login.php");
     }
-    
-    
+     
     if($_GET){
         //import database
         include("../connection.php");

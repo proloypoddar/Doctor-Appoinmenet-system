@@ -7,33 +7,18 @@
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
-        
     <title>Sign Up</title>
-    
 </head>
 <body>
 <?php
-
-//learn from w3schools.com
-//Unset all the server side variables
-
 session_start();
-
 $_SESSION["user"]="";
 $_SESSION["usertype"]="";
-
-// Set the new timezone
 date_default_timezone_set('Asia/Kolkata');
 $date = date('Y-m-d');
-
 $_SESSION["date"]=$date;
 
-
-
 if($_POST){
-
-    
-
     $_SESSION["personal"]=array(
         'fname'=>$_POST['fname'],
         'lname'=>$_POST['lname'],
@@ -41,20 +26,12 @@ if($_POST){
         'nic'=>$_POST['nic'],
         'dob'=>$_POST['dob']
     );
-
-
     print_r($_SESSION["personal"]);
     header("location: create-account.php");
-
-
-
-
 }
-
 ?>
 
-
-    <center>
+<center>
     <div class="container">
         <table border="0">
             <tr>
@@ -64,7 +41,7 @@ if($_POST){
                 </td>
             </tr>
             <tr>
-                <form action="" method="POST" >
+                <form action="" method="POST">
                 <td class="label-td" colspan="2">
                     <label for="name" class="form-label">Name: </label>
                 </td>
@@ -111,15 +88,13 @@ if($_POST){
                 <td class="label-td" colspan="2">
                 </td>
             </tr>
-
             <tr>
                 <td>
-                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >
+                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn">
                 </td>
                 <td>
                     <input type="submit" value="Next" class="login-btn btn-primary btn">
                 </td>
-
             </tr>
             <tr>
                 <td colspan="2">
@@ -129,11 +104,9 @@ if($_POST){
                     <br><br><br>
                 </td>
             </tr>
-
-                    </form>
+                </form>
             </tr>
         </table>
-
     </div>
 </center>
 </body>
